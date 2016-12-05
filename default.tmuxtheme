@@ -2,18 +2,6 @@
 # Color Theme
 #
 
-
-# themes_fg="colour232"
-# themes_bg="colour130"
-# themes_sep_fg="colour130"
-# themes_sep_bg="colour240"
-
-# themes_fg=$(tmux show-option -gqv "$themes_fg")"
-# themes_bg=$(tmux show-option -gqv "$themes_bg")"
-# themes_sep_fg=$(tmux show-option -gqv "$themes_sep_fg")"
-# themes_sep_bg=$(tmux show-option -gqv "$themes_sep_bg")"
-
-
 # Status update interval
 set -g status-interval 1
 
@@ -36,12 +24,12 @@ set -g window-status-format " #I:#W#F "
 set -g window-status-current-format "#[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]  #I:#W#F #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]"
 
 # Current window status
-set -g window-status-current-bg colour130
-set -g window-status-current-fg colour232
+set -g window-status-current-bg "$themes_bg"
+set -g window-status-current-fg "$themes_fg"
 
 # Window with activity status
-set -g window-status-activity-bg colour130 # fg and bg are flipped here due to
-set -g window-status-activity-fg colour233 # a bug in tmux
+set -g window-status-activity-bg "$themes_bg" # fg and bg are flipped here due to
+set -g window-status-activity-fg "$themes_fg" # a bug in tmux
 
 # Window separator
 set -g window-status-separator ""
@@ -51,22 +39,22 @@ set -g status-justify centre
 
 # Pane border
 set -g pane-border-bg default
-set -g pane-border-fg colour238
+set -g pane-border-fg "$themes_fg"
 
 # Active pane border
 set -g pane-active-border-bg default
-set -g pane-active-border-fg colour130
+set -g pane-active-border-fg "$themes_fg"
 
 # Pane number indicator
 set -g display-panes-colour colour233
 set -g display-panes-active-colour colour245
 
 # Clock mode
-set -g clock-mode-colour colour130
+set -g clock-mode-colour "$themes_bg"
 set -g clock-mode-style 24
 
 # Message
-set -g message-bg colour130
+set -g message-bg "$themes_bg"
 set -g message-fg black
 
 # Command message
@@ -74,5 +62,5 @@ set -g message-command-bg colour233
 set -g message-command-fg black
 
 # Mode
-set -g mode-bg colour130
-set -g mode-fg colour232
+set -g mode-bg "$themes_bg"
+set -g mode-fg "$themes_bg"
