@@ -25,15 +25,11 @@ set -g status-bg colour233
 set -g status-left-bg colour233
 set -g status-left-fg colour243
 set -g status-left-length 40
-# set -g status-left "#[fg=$themes_fg,bg=$themes_bg,bold] ❐ #S #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]#[fg=colour233,bg=colour240] #(whoami) #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]#[fg=colour240,bg=colour235] #I:#P #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]"
-set -g status-left "$@themes_status_left"
 
 # Right side of status bar
 set -g status-right-bg colour233
 set -g status-right-fg colour243
 set -g status-right-length 150
-# set -g status-right "#[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold] #{battery_icon} #{battery_graph_pretty} #{battery_percentage} #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold] #[fg=colour240,bg=colour235] %H:%M:%S | %d-%b-%y #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold] #[fg=$themes_fg,bg=$themes_bg,bold] #H "
-set -g status-right "$@themes_status_right"
 
 # Window status
 set -g window-status-format " #I:#W#F "
