@@ -7,7 +7,7 @@ default_themes_color="blue"
 
 main() {
 	local themes_color="$(get_tmux_option "@themes_color" "$default_themes_color")"
-  tmux source-file "$CURRENT_DIR/theme/${themes_color}.color"
-  tmux source-file "$CURRENT_DIR/default.tmuxtheme"
+  source "$CURRENT_DIR/theme/${themes_color}.color"
+  $(default_tmux_setup)
 }
 main
