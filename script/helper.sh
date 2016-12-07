@@ -32,8 +32,8 @@ default_tmux_setup() {
   tmux set -g window-status-current-format "#[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]  #I:#W#F #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]"
 
   # Current window status
-  tmux set -g window-status-current-bg "$themes_bg"
-  tmux set -g window-status-current-fg "$themes_fg"
+  # tmux set -g window-status-current-bg "$themes_bg"
+  # tmux set -g window-status-current-fg "$themes_fg"
 
   # Window with activity status
   tmux set -g window-status-activity-bg "$themes_bg" # fg and bg are flipped here due to
