@@ -1,4 +1,4 @@
-themes_fg="colour232"
-themes_bg="colour24"
-themes_sep_fg="colour24"
-themes_sep_bg="colour240"
+themes_fg=colour232
+themes_bg=colour24
+themes_sep_fg=colour24
+themes_sep_bg=default
