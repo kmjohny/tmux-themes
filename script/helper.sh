@@ -28,8 +28,8 @@ default_tmux_setup() {
   tmux set -g status-right-length 150
 
   # Window status
-  tmux set -g window-status-format " #I:#W#F "
-  tmux set -g window-status-current-format "#[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]  #I:#W#F #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]"
+  #tmux set -g window-status-format " #I:#W#F "
+  #tmux set -g window-status-current-format "#[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]  #I:#W#F #[fg=$themes_sep_fg,bg=$themes_sep_bg,nobold]"
 
   # Current window status
   # tmux set -g window-status-current-bg "$themes_bg"
